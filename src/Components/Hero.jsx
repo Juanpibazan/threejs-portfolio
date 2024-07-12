@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
     id='home'
-    className='relative w-full h-screen mx-auto flex flex-col justify-center items-start'
+    className='relative w-full h-[800px] mx-auto flex flex-col justify-center items-start'
     >
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div className='flex flex-col justify-start items-center gap-2'>
@@ -18,11 +18,11 @@ const Hero = () => {
         </div>
         <div className='flex flex-col justify-center items-start gap-7'>
           <h1 className='text-white font-bold text-7xl'>Hi, I'm <span className='text-[#6ee2f5]'>Juan Pablo</span></h1>
-          <p className='text-xl leading-normal'>I develop 3D visuals,<br className='sm:hidden' /> user interfaces and web applications</p>
+          <p className='text-lg leading-normal text-justify'>I develop web user interfaces, full-stack web applications and create in-depth data analysis, along with beautiful Power BI dashboards and ML models</p>
         </div>
       </div>
       <ComputerCanvas />
-      <div className='absolute xs:bottom-10 bottom-32 w-full
+      <div className='absolute xs:bottom-1 bottom-2 w-full
       flex justify-center items-center mt-4'
       >
         <a href='#about'>

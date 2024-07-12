@@ -46,7 +46,7 @@ const About = () => {
     <section className='flex flex-col justify-center items-start gap-4 sm:px-4 px-10'
     >
       <motion.div
-      variants={textVariant(10)}
+      variants={textVariant(2)}
       >
         <h3 className={styles.heroSubText}>INTRODUCTION</h3>
         <h1 className={styles.heroHeadText}>Overview.</h1>

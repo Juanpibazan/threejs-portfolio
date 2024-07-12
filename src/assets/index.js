@@ -21,15 +21,24 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import sql from './sql.png';
+import pythonIcon from './python-sin-fondo.png';
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import bcpLogo from './Logo_BCP.svg';
+import gojaLogo from './GOJALogo.png';
+import gojaLogo2 from './goja_llc_logo.jpg';
+import jtiLogo from './jti-logo.png';
+import advancedLogo from './ADVANCED-logo.png';
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import nikeWebsite from './shoes-website.png';
+import garageSaleClub from './garage-sale-club.png';
 
 export {
   logo,
@@ -54,11 +63,20 @@ export {
   tailwind,
   typescript,
   threejs,
+  sql,
+  pythonIcon,
   meta,
   shopify,
   starbucks,
   tesla,
+  bcpLogo,
+  gojaLogo,
+  gojaLogo2,
+  jtiLogo,
+  advancedLogo,
   carrent,
   jobit,
   tripguide,
+  nikeWebsite,
+  garageSaleClub
 };

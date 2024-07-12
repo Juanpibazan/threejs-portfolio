@@ -15,14 +15,23 @@ import {
     git,
     figma,
     docker,
+    sql,
+    pythonIcon,
     meta,
     starbucks,
     tesla,
+    bcpLogo,
+    gojaLogo,
+    gojaLogo2,
+    jtiLogo,
+    advancedLogo,
     shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    nikeWebsite,
+    garageSaleClub
   } from "../assets";
   
   export const navLinks = [
@@ -73,16 +82,16 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Python",
+      icon: pythonIcon,
     },
     {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "sql",
+      icon: sql,
     },
     {
       name: "Tailwind CSS",
@@ -105,10 +114,6 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
       name: "docker",
       icon: docker,
     },
@@ -116,55 +121,64 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Variable Compensation Analyst",
+      company_name: "Banco de Crédito de Bolivia",
+      icon: bcpLogo,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "October 2017 - September 2019",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Create and update every variable compensation model for different positions in many areas inside the Credicorp Financial Group.",
+        "Handle and distribute reports from different employee data bases.",
+        "Automate different processes related to handling data bases.",
+        "Manage outsourced personnel, their payroll and all social charges involved.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Scrum Master/Project Manager in Finance Department",
+      company_name: "GOJA",
+      icon: gojaLogo2,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "July 2020 - November 2020",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Coordinate all kinds of projects and tasks within Finance",
+        "In charge of ensuring the application of the agile methodology of Scrum, Kanban and Traction.",
+        "Prepare and carry out Scrum and Traction ceremonies (Sprint Planning, Sprint Review, Daily Meeting, L10 Meeting, etc.)",
+        "Review each team member's time log for valuable information about hours and task categorization",
+        "Assembly of reports based on the recording of hours of the team.",
+        "Assembly of Dashboards in Power BI, using Power Query and DAX.",
+        "utomate tasks through Power Automate and Power Apps.",
+        "Work in English."
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Business Intelligence Analyst",
+      company_name: "Japan Tobacco International",
+      icon: jtiLogo,
+      //iconBg: "#383E56",
+      iconBg:'#fff',
+      date: "December 2020 - April 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Handle information in different SQL Server Databases, create Stored Procedures and Jobs.",
+        "Analyze information using SQL.",
+        "Create Power BI dashboards and Excel reports.",
+        "Automate different tasks and processes through VBA, Power Automate and Power Apps.",
+        "Create Machine Learning models, using Python.",
+        "Collaborate on Data Migration (ETL Processes) from Local Data Warehouse to Global Data Warehouse, using SSIS."
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Technical Consultant",
+      company_name: "Advanced Utility Systems",
+      icon: advancedLogo,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "April 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Implement Customer Engagement web sites for different clients.",
+        "Use HTML, CSS and JS to personalize the site.",
+        "Execute SQL queries to test correct data flow, create databases, tables, views, etc.",
+        "Execute REST API calls using Postman.",
+        "Use PowerShell scripts to test connections between different servers.",
+        "Work in English",
       ],
     },
   ];
@@ -198,16 +212,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Nike Shoes Website",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform that serves a showroom of Nike shoes. It was a good way to practice React JS, Tailwind CSS and responsive design.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "web-development",
           color: "green-text-gradient",
         },
         {
@@ -215,31 +229,31 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: nikeWebsite,
+      source_code_link: "https://nike-website-yxa1.onrender.com/",
     },
     {
-      name: "Job IT",
+      name: "Garage Sale Club",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that enables garage sales visitors to register to the club and become frequent clients or even sellers on future editions. Hopefully it will also become an e-commerce site.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "threejs",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
+      image: garageSaleClub,
+      source_code_link: "https://garage-sale-lpz.onrender.com/",
+    }
+    /*,{
       name: "Trip Guide",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
@@ -259,7 +273,7 @@ import {
       ],
       image: tripguide,
       source_code_link: "https://github.com/",
-    },
+    },*/
   ];
   
   export { services, technologies, experiences, testimonials, projects };
