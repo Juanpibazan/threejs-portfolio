@@ -47,6 +47,13 @@ const ProjectCard = ({index, name, description, tags,image, source_code_link})=>
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[20px]'>{name}</h3>
           <p className='text-secondary leading-normal text-[15px]'>{description}</p>
+          <div className='flex justify-start items-center gap-2 flex-wrap'>
+            {tags.map((tag,index)=>(
+              <p key={index}
+              className={`${tag.color} mt-5 text-[14px]`}
+              >#{tag.name}</p>
+            ))}
+          </div>
         </div>
       </Tilt>
     </motion.div>
