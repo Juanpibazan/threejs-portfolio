@@ -21,7 +21,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import sql from './sql.png';
+import sql from './sql-sin-fondo.png';
 import pythonIcon from './python-sin-fondo.png';
 
 import meta from "./company/meta.png";
