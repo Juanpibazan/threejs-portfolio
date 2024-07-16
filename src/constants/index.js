@@ -3,6 +3,7 @@ import {
     backend,
     creator,
     web,
+    webIcon,
     javascript,
     typescript,
     html,
@@ -231,6 +232,7 @@ import {
       ],
       image: nikeWebsite,
       source_code_link: "https://nike-website-yxa1.onrender.com/",
+      github_page: 'https://github.com/Juanpibazan/nike-website'
     },
     {
       name: "Garage Sale Club",
@@ -242,7 +244,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "threejs",
+          name: "firebase",
           color: "green-text-gradient",
         },
         {
@@ -252,6 +254,7 @@ import {
       ],
       image: garageSaleClub,
       source_code_link: "https://garage-sale-lpz.onrender.com/",
+      github_page: 'https://github.com/Juanpibazan/garage-sale-frontend'
     }
     /*,{
       name: "Trip Guide",

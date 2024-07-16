@@ -4,11 +4,11 @@ import {motion} from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import { projects } from '../constants';
-import { github } from '../assets';
+import { git, github, webIcon } from '../assets';
 import {Tilt} from 'react-tilt';
 
 
-const ProjectCard = ({index, name, description, tags,image, source_code_link})=>{
+const ProjectCard = ({index, name, description, tags,image, github_page, source_code_link})=>{
 
   return (
     <motion.div
@@ -30,9 +30,22 @@ const ProjectCard = ({index, name, description, tags,image, source_code_link})=>
           />
           <div className='absolute flex justify-end m-3
           z-10 rounded-full
-          card-img_hover top-0 right-0'>
+          card-img_hover top-0 right-0 gap-1'>
             <div
             onClick={()=> window.open(source_code_link, '_blank')}
+            className='bg-gradient-to-r from-white to-gray-200 w-10 h-10
+            flex justify-center items-center cursor-pointer rounded-full
+            border-[1px] border-black'
+            >
+              <img
+              src={webIcon}
+              alt={source_code_link}
+              className='w-1/2 h-1/2 object-contain'
+              />
+              
+            </div>
+            <div
+            onClick={()=> window.open(github_page, '_blank')}
             className='black-gradient w-10 h-10 flex justify-center items-center cursor-pointer rounded-full'
             >
               <img
