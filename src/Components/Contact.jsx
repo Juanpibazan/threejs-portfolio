@@ -72,20 +72,10 @@ const Contact = () => {
         </form>
       </motion.div>
       <motion.div
-      initial={{
-        opacity:0
-      }}
-      animate={{
-        opacity:1
-      }}
-      transition={{
-        type:'spring',
-        delay:0.5,
-        duration:4
-      }}
-      
+      variants={slideIn('right','tween',0.2,1)}
+      className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] xl:w-[60%] w-full'
       >
-        <h1 className='text-white'>Hi</h1>
+        <EarthCanvas/>
       </motion.div>
     </div>
   )

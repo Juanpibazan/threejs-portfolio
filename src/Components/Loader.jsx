@@ -24,4 +24,4 @@ const Loader = () => {
     </Html>
   )
 }
-export default Loader
+export default Loader;
