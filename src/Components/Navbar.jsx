@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import {jplogo, menu, close} from '../assets'
+import {jpBazanLogo, menu, close} from '../assets'
 
 const Navbar = () => {
 
@@ -15,7 +15,7 @@ const Navbar = () => {
         <Link className='flex justify-start items-center gap-5'>
           <div>
             <img
-            src={jplogo}
+            src={jpBazanLogo}
             alt='logo'
             width={70}
             height={70}

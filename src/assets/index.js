@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import jplogo from './jplogo.svg';
+import jpBazanLogo from './jp-bazan-logo.svg';
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -44,6 +45,7 @@ import garageSaleClub from './garage-sale-club.png';
 export {
   logo,
   jplogo,
+  jpBazanLogo,
   backend,
   creator,
   mobile,
