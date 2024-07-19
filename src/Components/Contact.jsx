@@ -16,8 +16,35 @@ const Contact = () => {
   const [loading, setloading] = useState(false);
   const formRef = useRef();
 
-  const handleSubmit = (e) =>{
 
+  const emailjs_service_id=import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const emailjs_template_id=import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const emailjs_public_api_key=import.meta.env.VITE_EMAILJS_PUBLIC_API_KEY;
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+    setloading(true);
+    emailjs.send(
+      'service_d0tanq8',
+      'template_agrwwzg',
+      {
+        from_name:form.name,
+        to_name:'Juan Pablo',
+        from_email: form.email,
+        to_email: 'juanpibazan3693@gmail.com',
+        message:form.message
+      },
+      'O2GMY-0qh7EkuUdnF'
+    )
+    .then(()=>{
+      setloading(false);
+      alert('Your message has been sent to JP Bazan successfully. He will reply as soon as possible!');
+    })
+    .catch((e)=>{
+      setloading(false);
+      alert('There has been some problem while sending your message...');
+      console.log(e);
+    })
   };
 
   const handleChange = (e)=>{
