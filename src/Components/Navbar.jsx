@@ -10,9 +10,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <header className={`${styles.paddingX} w-full`}>
+    <header className={`${styles.paddingX} w-full fixed z-20 bg-black-100`}>
       <nav className='flex justify-between items-center'>
-        <Link className='flex justify-start items-center gap-5'>
+        <Link className='flex justify-start items-center gap-5' to='/#home'>
           <div>
             <img
             src={jpBazanLogo}
@@ -31,7 +31,7 @@ const Navbar = () => {
         <ul className='flex justify-evenly items-center gap-5 max-sm:hidden list-none'>
           {navLinks.map((link)=>(
             <li key={link.id}>
-              <Link id={link.id} to={`/${link.id}`}
+              <a href={`#${link.id}`}
               className={`${active===link.id
                 ?'text-white font-bold'
                 :'text-slate-500'
@@ -39,7 +39,7 @@ const Navbar = () => {
               onClick={()=>{
                 setActive(link.title)
               }}
-              >{link.title}</Link>
+              >{link.title}</a>
             </li>
           ))}
         </ul>
@@ -53,7 +53,7 @@ const Navbar = () => {
             <ul className='flex flex-col justify-start items-end gap-2 absolute right-3 mt-4 list-none bg-gradient-to-r from-slate-700 to-black w-[100px] rounded-md px-3 py-3' >
             {navLinks.map((link)=>(
               <li key={link.id}>
-                <Link id={link.id} to={`/${link.id}`}
+                <a href={`#${link.id}`}
                 className={`${active===link.id
                   ?'text-white font-bold'
                   :'text-slate-500'
@@ -61,7 +61,7 @@ const Navbar = () => {
                 onClick={()=>{
                   setActive(link.title)
                 }}
-                >{link.title}</Link>
+                >{link.title}</a>
               </li>
             ))}
           </ul>

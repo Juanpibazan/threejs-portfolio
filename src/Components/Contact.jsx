@@ -39,6 +39,11 @@ const Contact = () => {
     .then(()=>{
       setloading(false);
       alert('Your message has been sent to JP Bazan successfully. He will reply as soon as possible!');
+      setForm({
+        name:'',
+        email:'',
+        message:''
+      });
     })
     .catch((e)=>{
       setloading(false);
@@ -52,7 +57,7 @@ const Contact = () => {
   };
 
   return (
-    <div
+    <div id='contact'
     className='xl:mt-12 xl:flex-row flex-col-reverse gap-10 flex justify-start items-center overflow-hidden'
     >
       <motion.div
