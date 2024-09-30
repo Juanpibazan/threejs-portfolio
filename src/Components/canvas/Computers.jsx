@@ -9,7 +9,10 @@ const Computers = ({isMobile}) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
 
   return (
-    <mesh>
+    <mesh
+    position={isMobile ? [0,0,0] : [0,-1,0]}
+    //rotation={[Math.PI / 2, 0, 0]}
+    >
       <hemisphereLight
       intensity={1.5}
       groundColor='black'
@@ -26,8 +29,9 @@ const Computers = ({isMobile}) => {
       <primitive 
       object={computer.scene}
       scale={isMobile ? 0.4 : 0.75}
-      position={isMobile ? [-8,-5,-2.2] : [0,-5, -1.5]}
-      rotation={[-0.01,-0.2,-0.1]}
+      //position={isMobile ? [-8,-5,-2.2] : [0,-5, -1.5]}
+      //position={isMobile ? [-10,1,10] : [0,-5, -1.5]}
+      //rotation={[-0.01,-0.2,-0.1]}
       />
     </mesh>
   )
@@ -58,12 +62,13 @@ const ComputerCanvas = ()=>{
     <Canvas
     frameloop='demand'
     shadows
-    camera={{position:[20,3,5], fov:25}}
+    camera={{position:[20,3,5], fov:12}}
     gl={{preserveDrawingBuffer:true}}
-    className='max-sm:w-full mb-10'
+    className='max-sm:w-full mt-50'
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
+        //autoRotate
         enableZoom={false}
         maxPolarAngle={Math.PI/2}
         minPolarAngle={Math.PI/2}
