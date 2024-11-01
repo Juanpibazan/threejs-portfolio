@@ -41,6 +41,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import nikeWebsite from './shoes-website.png';
 import garageSaleClub from './garage-sale-club.png';
+import jobsBank from './uxminer-job-bank.png';
 
 export {
   logo,
@@ -82,5 +83,6 @@ export {
   jobit,
   tripguide,
   nikeWebsite,
-  garageSaleClub
+  garageSaleClub,
+  jobsBank
 };

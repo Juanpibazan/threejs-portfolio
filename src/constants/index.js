@@ -32,7 +32,8 @@ import {
     tripguide,
     threejs,
     nikeWebsite,
-    garageSaleClub
+    garageSaleClub,
+    jobsBank
   } from "../assets";
   
   export const navLinks = [
@@ -251,10 +252,36 @@ import {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "React Three Fiber/React Three Drei",
+          color: "violet-text-gradient",
+        }
       ],
       image: garageSaleClub,
       source_code_link: "https://garage-sale-lpz.onrender.com/",
       github_page: 'https://github.com/Juanpibazan/garage-sale-frontend'
+    },
+    {
+      name: "Bank of Jobs",
+      description:
+        "A REST API built using NodeJS, Express with JWT authentication and different endpoints that save/read data to/from the MySQL server. Both (REST API and MySQL) are hosted on the same Hostinger VPS. I configured the linux VPS from 0, installing NodeJS, MySQL and pm2 so the NodeJS server can continue running even if I exit ssh session. Swagger Documentation is present for anyone who wants to consume the REST API.",
+      tags: [
+        {
+          name: "NodeJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Express",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Swagger",
+          color: "green-text-gradient",
+        },
+      ],
+      image: jobsBank,
+      source_code_link: "http://uxminer.com:4000/docs/",
+      github_page: 'https://github.com/Juanpibazan/banco_trabajos_backend'
     }
     /*,{
       name: "Trip Guide",
