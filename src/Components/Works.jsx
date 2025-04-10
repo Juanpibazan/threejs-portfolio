@@ -13,7 +13,7 @@ const ProjectCard = ({index, name, description, tags,image, github_page, source_
   return (
     <motion.div
     variants={fadeIn('up','spring',0.3 * index, 2)}
-    
+    className='max-md:w-full max-md:py-2 px-4'
     >
       <Tilt
       options={{
@@ -92,7 +92,7 @@ const Works = () => {
         It reflects my ability to resolve different challenges using different technologies.
         </motion.p>
       </div>
-      <div className='mt-20 flex gap-7 overflow-auto'>
+      <div className='mt-20 flex max-md:flex-col gap-7 md:overflow-auto'>
     {projects.map((project,index)=>(
       <ProjectCard 
       key={index}
