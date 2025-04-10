@@ -33,7 +33,8 @@ import {
     threejs,
     nikeWebsite,
     garageSaleClub,
-    jobsBank
+    jobsBank,
+    criptopass
   } from "../assets";
   
   export const navLinks = [
@@ -214,52 +215,31 @@ import {
   
   const projects = [
     {
-      name: "Nike Shoes Website",
+      name: "CriptoPass",
       description:
-        "Web-based platform that serves a showroom of Nike shoes. It was a good way to practice React JS, Tailwind CSS and responsive design.",
+        `A real and live FullStack project that lets users transfer from StableCoin to a FIAT (USD,EUR) bank account in the US,EU. This project has a backend built with NodeJS, Express with JWT authentication and connects to a third-party API. There are different endpoints that save/read data to/from the MySQL server. Both (REST API and MySQL) are hosted on the same Hostinger VPS. I configured the linux VPS from 0, installing NodeJS, MySQL and pm2 so the NodeJS server can continue running even if I exit ssh session.
+        The Frontend is built on React by using VITE, and TailWindCSS was used to style it.`,
       tags: [
         {
-          name: "react",
+          name: "NodeJS",
           color: "blue-text-gradient",
         },
         {
-          name: "web-development",
+          name: "Express",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "react",
           color: "green-text-gradient",
         },
         {
           name: "tailwind",
-          color: "pink-text-gradient",
-        },
+          color: "orange-text-gradient",
+        },,
       ],
-      image: nikeWebsite,
-      source_code_link: "https://nike-website-yxa1.onrender.com/",
-      github_page: 'https://github.com/Juanpibazan/nike-website'
-    },
-    {
-      name: "Garage Sale Club",
-      description:
-        "Web application that enables garage sales visitors to register to the club and become frequent clients or even sellers on future editions. Hopefully it will also become an e-commerce site.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "firebase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "React Three Fiber/React Three Drei",
-          color: "violet-text-gradient",
-        }
-      ],
-      image: garageSaleClub,
-      source_code_link: "https://garage-sale-lpz.onrender.com/",
-      github_page: 'https://github.com/Juanpibazan/garage-sale-frontend'
+      image: criptopass,
+      source_code_link: "https://criptopass.onrender.com/login",
+      github_page: 'https://github.com/Juanpibazan/criptopass-frontend'
     },
     {
       name: "Bank of Jobs",
@@ -282,6 +262,54 @@ import {
       image: jobsBank,
       source_code_link: "http://uxminer.com:4000/docs/",
       github_page: 'https://github.com/Juanpibazan/banco_trabajos_backend'
+    },
+    {
+      name: "Nike Shoes Website",
+      description:
+        "Web-based platform that serves a showroom of Nike shoes. It was a good way to practice React JS, Tailwind CSS and responsive design.",
+      tags: [
+        {
+          name: "react",
+          color: "green-text-gradient",
+        },
+        {
+          name: "web-development",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: nikeWebsite,
+      source_code_link: "https://nike-website-yxa1.onrender.com/",
+      github_page: 'https://github.com/Juanpibazan/nike-website'
+    },
+    {
+      name: "Garage Sale Club",
+      description:
+        "Web application that enables garage sales visitors to register to the club and become frequent clients or even sellers on future editions. Hopefully it will also become an e-commerce site.",
+      tags: [
+        {
+          name: "react",
+          color: "green-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "React Three Fiber/React Three Drei",
+          color: "orange-text-gradient",
+        }
+      ],
+      image: garageSaleClub,
+      source_code_link: "https://garage-sale-lpz.onrender.com/",
+      github_page: 'https://github.com/Juanpibazan/garage-sale-frontend'
     }
     /*,{
       name: "Trip Guide",

@@ -92,7 +92,7 @@ const Works = () => {
         It reflects my ability to resolve different challenges using different technologies.
         </motion.p>
       </div>
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 flex gap-7 overflow-auto'>
     {projects.map((project,index)=>(
       <ProjectCard 
       key={index}
